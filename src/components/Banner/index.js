@@ -40,7 +40,7 @@ export default function Banner() {
         </BannerP>
 
         <BannerButtonWrapper>
-          <Button to="/"
+          <Button to="buy"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'

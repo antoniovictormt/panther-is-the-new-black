@@ -16,21 +16,29 @@ import {
   Heading,
   SubTitle,
   BtnWrap,
+  SocialWrap,
   Column2,
   ImgWrap,
   Img
 } from './styles';
 
+import { ButtonBuy } from '../Button/styles';
+
 export default function InfoSection({
   lightBg,
   id,
   imgStart,
+  titleColor,
   topLine,
   lightText,
   headline,
   darkText,
   description,
+  btnWrap,
+  socialWrap,
+  borderRadius,
   img,
+  size,
   alt
 }) {
   return (
@@ -40,7 +48,7 @@ export default function InfoSection({
           <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>
+                <TopLine titleColor={titleColor}>
                   {topLine}
                 </TopLine>
                 <Heading lightText={lightText}>
@@ -49,7 +57,24 @@ export default function InfoSection({
                 <SubTitle darkText={darkText}>
                   {description}
                 </SubTitle>
-                <BtnWrap >
+                <BtnWrap btnWrap={btnWrap}>
+                  <ButtonBuy>
+                    <a href="http://www.kelpf.tk/TySjw" target="_blank" rel="noreferrer" title="Versão Física do Livro">
+                      <p>
+                        Compre aqui a versão física do livro
+                      </p>
+                    </a>
+                  </ButtonBuy>
+
+                  <ButtonBuy>
+                    <a href="http://www.kelpf.tk/F3yM4" target="_blank" rel="noreferrer" title="Versão Digital do Livro">
+                      <p>
+                        Compre aqui a versão digital do livro
+                      </p>
+                    </a>
+                  </ButtonBuy>
+                </BtnWrap>
+                <SocialWrap socialWrap={socialWrap}>
                   <a href="http://www.kelpf.tk/6hpiy" target="_blank" rel="noreferrer" title="Facebook de Rodrigo Sérgio" id="Facebook">
                     <FiFacebook />
                   </a>
@@ -65,13 +90,13 @@ export default function InfoSection({
                   <a href="http://www.kelpf.tk/6hpiy" target="_blank" rel="noreferrer" title="E-mail de Rodrigo Sérgio" id="E-mail">
                     <FiMail />
                   </a>
-                </BtnWrap>
+                </SocialWrap>
               </TextWrapper>
             </Column1>
 
             <Column2>
               <ImgWrap>
-                <Img src={img} alt={alt} />
+                <Img size={size} borderRadius={borderRadius} src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>

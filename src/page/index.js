@@ -6,7 +6,15 @@ import {
   Banner,
   InfoSection
 } from '../components';
-import { homeObjOne } from '../components/InfoSection/data';
+
+import {
+  homeObjOne,
+  homeObjTwo,
+  homeObjThree,
+  homeObjFour,
+  homeObjFive,
+  homeObjSix
+} from '../components/InfoSection/data';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +29,11 @@ export default function Home() {
       <HeaderBar toggle={toggle} />
       <Banner />
       <InfoSection {...homeObjOne} />
+      <InfoSection {...homeObjTwo} />
+      <InfoSection {...homeObjThree} />
+      <InfoSection {...homeObjFour} />
+      <InfoSection {...homeObjFive} />
+      <InfoSection {...homeObjSix} />
     </>
   )
 };

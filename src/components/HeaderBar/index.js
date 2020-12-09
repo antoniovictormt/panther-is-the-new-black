@@ -19,8 +19,8 @@ export default function Header({ toggle }) {
     <>
       <Nav>
         <NavContainer>
-          <NavLogo to="/">
-            <img src={Logo} alt="" />
+          <NavLogo to="home">
+            <img src={Logo} alt="Panther is the New Black" />
           </NavLogo>
 
           <MobileIcon onClick={toggle}>
@@ -48,10 +48,15 @@ export default function Header({ toggle }) {
                 Depoimentos
               </NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks to="gallery">
+                Galeria
+              </NavLinks>
+            </NavItem>
           </NavMenu>
 
           <HeaderButton>
-            <HeaderButtonLink to="https://www.amazon.com.br/Panther-New-Black-Representa%C3%A7%C3%A3o-Comunica%C3%A7%C3%A3o-ebook/dp/B07QZX6Q3V">
+            <HeaderButtonLink to="buy">
               Comprar
             </HeaderButtonLink>
           </HeaderButton>

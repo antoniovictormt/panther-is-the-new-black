@@ -11,7 +11,6 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
 
-  font-size: 1rem;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -38,7 +37,6 @@ export const NavLogo = styled(LinkRouter)`
   align-items: center;  
 
   font-weight: bold;
-  font-size: 1rem;
   text-decoration: none;
 
   cursor: pointer;
@@ -46,7 +44,7 @@ export const NavLogo = styled(LinkRouter)`
   background: rgb(255, 255, 255);
 
   &:hover{
-    background: rgb(151, 133, 215);
+    background: rgb(90,17,90);
     }
 
   /* @media screen and (max-width: 800px) {
@@ -69,7 +67,7 @@ export const MobileIcon = styled.div`
     cursor: pointer;
 
     &:hover{
-      color: rgb(151, 133, 215);
+      color: rgb(90,17,90);
     }
   };
 `;
@@ -79,6 +77,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+
 
   @media screen and (max-width: 800px) {
     display: none;
@@ -95,18 +94,18 @@ export const NavLinks = styled(LinkScrool)`
   justify-content: center;
 
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid rgb(151, 133, 215);
+    border-bottom: 3px solid rgb(90,17,90);
   };
 
   &:hover{
-    color: rgb(151, 133, 215);
+    color: rgb(90,17,90);
   };
 `;
 
@@ -119,13 +118,13 @@ export const HeaderButton = styled.nav`
   }
 `;
 
-export const HeaderButtonLink = styled(LinkRouter)`
+export const HeaderButtonLink = styled(LinkScrool)`
   border-radius: 50px;
-  background: rgb(151, 133, 215);
+  background: rgb(90,17,90);
   color: rgb(255, 255, 255);
   white-space: nowrap;
   padding: 10px 22px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-decoration: none;
   outline: none;
   border: none;
@@ -135,6 +134,6 @@ export const HeaderButtonLink = styled(LinkRouter)`
   &:hover{
     transition: all 0.2s ease-in-out;
     background: rgb(255, 255, 255);
-    color: rgb(151, 133, 215);
+    color: rgb(90,17,90);
   }
 `;

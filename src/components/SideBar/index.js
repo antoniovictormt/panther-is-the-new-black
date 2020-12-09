@@ -36,10 +36,14 @@ export default function SideBar({ isOpen, toggle }) {
           <SideBarLinks to="depoiments" onClick={toggle}>
             Depoimentos
           </SideBarLinks>
+
+          <SideBarLinks to="gallery" onClick={toggle}>
+            Galeria
+          </SideBarLinks>
         </SideBarMenu>
 
         <SideBarButton>
-          <SideBarButtonLink to="https://www.amazon.com.br/Panther-New-Black-Representa%C3%A7%C3%A3o-Comunica%C3%A7%C3%A3o-ebook/dp/B07QZX6Q3V">
+          <SideBarButtonLink to="buy" onClick={toggle}>
             Comprar
             </SideBarButtonLink>
         </SideBarButton>
