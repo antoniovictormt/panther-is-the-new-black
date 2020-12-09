@@ -3,8 +3,10 @@ import { useState } from 'react';
 import {
   SideBar,
   HeaderBar,
-  Banner
+  Banner,
+  InfoSection
 } from '../components';
+import { homeObjOne } from '../components/InfoSection/data';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +20,7 @@ export default function Home() {
       <SideBar isOpen={isOpen} toggle={toggle} />
       <HeaderBar toggle={toggle} />
       <Banner />
+      <InfoSection {...homeObjOne} />
     </>
   )
 };

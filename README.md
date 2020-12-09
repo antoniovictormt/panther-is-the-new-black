@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+<p align="center">
+   <img src="./.github/logo.svg" alt="Panther is the New Black" width="280"/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#movie_camera-web-preview">Web Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#file_folder-demo-website">Demo Website</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#books-technologies">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#computer-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#green_book-how-to-run">How to Run</a>
+</p>
 
-## Available Scripts
+<p align="center">	
+   <a href="https://www.linkedin.com/in/antonio-victor-melo-trindade-48aab615b//">
+      <img alt="Antonio Victor Melo Trindade" src="https://img.shields.io/badge/-Antonio_Victor_Melo_Trindade-d21100?style=flat-square&logo=Linkedin&logoColor=white&labelColor=3700ff" />
+   </a>
+  
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <img src="./.github/landing.png" alt="Panther is the New Black" width="100%">
+</p>
 
-### `yarn start`
+## :movie_camera: Web Preview
+![Panther is the New Black web preview](.github/panter-is-the-new-black.gif "Panther is the New Black Web Preview")
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## :file_folder: Demo Website
+👉  Demo: You can acess the website at: (http://www.panther-is-the-new-black.tk/)   
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## :books: Technologies
 
-### `yarn test`
+This project was made using the follow technology:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://reactjs.org)
 
-### `yarn build`
+## :computer: Project
+🐱🎥📖 Landing page of the book - Panther is the New Black: Representação e Cultura na Comunicação do Filme Pantera Negra.  This website is developed using ReactJS. 🐱🎥📖
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :green_book: How to run
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Clone Repository
+```bash
+$ git clone https://github.com/antoniovictormt/panther-is-the-new-black
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Run Web Project
+💻 Enter the folder [`web/`](web/) and run the following commands:
 
-### `yarn eject`
+<details>
+<summary><i>with <b>npm</b></i></summary>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# Install dependencies
+$ npm install
+# Start development
+$ npm start
+```
+</details>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<details>
+<summary><i>with <b>yarn</b></i></summary>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# Install dependencies
+$ yarn
+# Start development
+$ yarn start
+```
+create a .env.production for your REACT_APP_HOST and REACT_APP_API
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
+⚠️ Go to http://localhost:3000/ to see the result.

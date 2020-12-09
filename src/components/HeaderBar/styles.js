@@ -3,8 +3,9 @@ import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScrool } from 'react-scroll';
 
 export const Nav = styled.nav`
-  height: 90px;
-  margin-top: 15px;
+  background: rgb(0, 0, 0);
+  height: 100px;
+  margin-top: 10px;
 
   display: flex;
   justify-content: center;
@@ -39,6 +40,7 @@ export const NavLogo = styled(LinkRouter)`
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
+
   cursor: pointer;
 
   background: rgb(255, 255, 255);
@@ -46,12 +48,16 @@ export const NavLogo = styled(LinkRouter)`
   &:hover{
     background: rgb(151, 133, 215);
     }
+
+  /* @media screen and (max-width: 800px) {
+    display: none;
+  }; */
 `;
 
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     display: block;
     position: absolute;
 
@@ -74,7 +80,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     display: none;
   };
 `;
@@ -108,7 +114,7 @@ export const HeaderButton = styled.nav`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     display: none;
   }
 `;

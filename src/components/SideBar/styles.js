@@ -82,10 +82,12 @@ export const SideBarButtonLink = styled(LinkRouter)`
   border-radius: 50px;
   background: rgb(151, 133, 215);
   color: rgb(255, 255, 255);
+
   white-space: nowrap;
   padding: 16px 64px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
+  
   outline: none;
   border: none;
   cursor: pointer;
