@@ -3,7 +3,7 @@ import { Link as LinkRouter } from 'react-router-dom';
 import { Link as LinkScrool } from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: rgb(0, 0, 0);
+  background: var(--color-dark);
   height: 100px;
   margin-top: 10px;
 
@@ -41,33 +41,30 @@ export const NavLogo = styled(LinkRouter)`
 
   cursor: pointer;
 
-  background: rgb(255, 255, 255);
+  background: var(--color-primary);
 
   &:hover{
-    background: rgb(90,17,90);
+    background: var(--color-secundary);
     }
-
-  /* @media screen and (max-width: 800px) {
-    display: none;
-  }; */
 `;
 
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     display: block;
     position: absolute;
 
     top: 0;
     right: 0;
-
+    
+    color: var(--color-primary);
     transform: translate(-100%, 60%);
     font-size: 2rem;
     cursor: pointer;
 
     &:hover{
-      color: rgb(90,17,90);
+      color: var(--color-secundary);
     }
   };
 `;
@@ -79,7 +76,7 @@ export const NavMenu = styled.ul`
   text-align: center;
 
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     display: none;
   };
 `;
@@ -93,6 +90,7 @@ export const NavLinks = styled(LinkScrool)`
   align-items: center;
   justify-content: center;
 
+  color: var(--color-primary);
   text-decoration: none;
   font-size: 1.2rem;
 
@@ -101,11 +99,11 @@ export const NavLinks = styled(LinkScrool)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid rgb(90,17,90);
+    border-bottom: 3px solid var(--color-secundary);
   };
 
   &:hover{
-    color: rgb(90,17,90);
+    color: var(--color-secundary);
   };
 `;
 
@@ -113,15 +111,15 @@ export const HeaderButton = styled.nav`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     display: none;
   }
 `;
 
 export const HeaderButtonLink = styled(LinkScrool)`
   border-radius: 50px;
-  background: rgb(90,17,90);
-  color: rgb(255, 255, 255);
+  background: var(--color-secundary);
+  color: var(--color-primary);
   white-space: nowrap;
   padding: 10px 22px;
   font-size: 1.2rem;
@@ -133,7 +131,7 @@ export const HeaderButtonLink = styled(LinkScrool)`
 
   &:hover{
     transition: all 0.2s ease-in-out;
-    background: rgb(255, 255, 255);
-    color: rgb(90,17,90);
+    background: var(--color-primary);
+    color: var(--color-secundary);
   }
 `;

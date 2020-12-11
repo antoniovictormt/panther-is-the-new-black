@@ -19,7 +19,7 @@ export default function Header({ toggle }) {
     <>
       <Nav>
         <NavContainer>
-          <NavLogo to="home">
+          <NavLogo to="/">
             <img src={Logo} alt="Panther is the New Black" />
           </NavLogo>
 

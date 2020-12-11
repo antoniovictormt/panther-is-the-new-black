@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {
   MdArrowForward,
   MdKeyboardArrowRight
-} from 'react-icons/md'
+} from 'react-icons/md';
 
 export const BannerContainer = styled.div`
   display: flex;
@@ -31,7 +31,7 @@ export const BannerContainer = styled.div`
   }
 `;
 
-export const BannerBg = styled.div`
+export const BannerSection = styled.div`
   position: absolute;
   top: 0;
   right: 0;
@@ -43,12 +43,29 @@ export const BannerBg = styled.div`
   overflow: hidden;
 `;
 
+export const BannerBg = styled.img`
+  display: none;
+
+  @media screen and (max-width: 800px) { 
+    display: flex;       
+    width: 100%;
+    height: 100%;
+
+    -o-object-fit: cover;
+    object-fit: cover;
+  };
+`
+
 export const BannerVd = styled.video`
   width: 100%;
   height: 100%;
 
   -o-object-fit: cover;
   object-fit: cover;
+
+  @media screen and (max-width: 800px) {    
+    display: none;
+  };
 `;
 
 export const BannerContent = styled.div`
@@ -64,8 +81,9 @@ export const BannerContent = styled.div`
 export const BannerH1 = styled.h1`
   font-size: 48px;
   text-align: center;
+  color: var(--color-primary);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     font-size: 40px;
   };
 
@@ -78,13 +96,10 @@ export const BannerP = styled.p`
   margin-top: 24px;
   font-size: 24px;
   text-align: center;
+  color: var(--color-primary);
 
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
-  };
-
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
+  @media screen and (max-width: 800px) {
+    display: none;
   };
 `;
 

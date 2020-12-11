@@ -3,10 +3,10 @@ import { Link } from 'react-scroll';
 
 export const Button = styled(Link)`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? 'rgb(90,17,90)' : 'rgb(90,17,90)')};
+  background: ${({ primary }) => (primary ? 'var(--color-secundary)' : 'var(--color-secundary)')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
-  color: ${({ dark }) => (dark ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)')};
+  color: ${({ dark }) => (dark ? 'var(--color-dark)' : 'var(--color-primary)')};
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   border: none;
@@ -18,17 +18,17 @@ export const Button = styled(Link)`
 
   &:hover {
   transition: all 0.2s ease-in-out;
-  background: ${({ primary }) => (primary ? 'rgb(90,17,90)' : 'rgb(255, 255, 255)')};  
-  color: ${({ dark }) => (dark ? 'rgb(0, 0, 0)' : 'rgb(0, 0, 0, 0.4)')};
+  background: ${({ primary }) => (primary ? 'var(--color-secundary)' : 'var(--color-primary)')};  
+  color: ${({ dark }) => (dark ? 'var(--color-dark)' : 'rgb(0, 0, 0, 0.4)')};
   };
 `;
 
 export const ButtonBuy = styled.div`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? 'rgb(90,17,90)' : 'rgb(90,17,90)')};
+  background: ${({ primary }) => (primary ? 'var(--color-secundary)' : 'var(--color-secundary)')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '14px 48px' : '12px 30px')};
-  color: ${({ dark }) => (dark ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)')};
+  color: ${({ dark }) => (dark ? 'var(--color-dark)' : 'var(--color-primary)')};
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
   border: none;
@@ -37,11 +37,10 @@ export const ButtonBuy = styled.div`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  margin-bottom: 15px;
 
   &:hover {
   transition: all 0.2s ease-in-out;
-  background: ${({ primary }) => (primary ? 'rgb(90,17,90)' : 'rgb(255, 255, 255)')};  
-  color: ${({ dark }) => (dark ? 'rgb(0, 0, 0)' : 'rgb(0, 0, 0, 0.4)')};
+  background: ${({ primary }) => (primary ? 'var(--color-secundary)' : 'var(--color-primary)')};  
+  color: ${({ dark }) => (dark ? 'var(--color-dark)' : 'rgb(0, 0, 0, 0.4)')};
   };
 `;

@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { Button } from '../Button/styles';
 
-import Video from '../../assets/videos/black_panther.mp4'
+import Video from '../../assets/videos/black_panther.mp4';
+import GIF from '../../assets/videos/black_panther.gif';
 
 import {
   BannerContainer,
+  BannerSection,
   BannerBg,
   BannerVd,
   BannerContent,
@@ -24,9 +26,10 @@ export default function Banner() {
 
   return (
     <BannerContainer id="home">
-      <BannerBg>
+      <BannerSection>
+        <BannerBg src={GIF} type=".gif" />
         <BannerVd autoPlay loop muted src={Video} type="video/mp4" />
-      </BannerBg>
+      </BannerSection>
 
       <BannerContent>
         <BannerH1>

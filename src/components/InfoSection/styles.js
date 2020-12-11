@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
-  background: ${({ lightBg }) => (lightBg ? 'rgb(90,17,90)' : 'rgb(0, 0, 0)')};
+  background: ${({ lightBg }) => (lightBg ? 'var(--color-secundary)' : 'var(--color-dark)')};
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     padding: 100px 0;
   }; 
 `;
@@ -12,7 +12,7 @@ export const InfoWrapper = styled.div`
   display: grid;
 
   z-index: 1;
-  height: 960px;
+  height: 820px;
   width: 100%;
   max-width: 1300px;
 
@@ -28,8 +28,9 @@ export const InfoRow = styled.div`
   align-items: center;
   grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
-  @media screen and (max-width: 800px) {
-    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+  @media screen and (max-width: 820px) {
+    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col2 col2' 'col1 col1'`)};    
+    height: 100%;
   };
 `;
 
@@ -53,7 +54,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: ${({ titleColor }) => (titleColor ? 'rgb(90,17,90)' : 'rgb(0, 0, 0)')};
+  color: ${({ titleColor }) => (titleColor ? 'var(--color-secundary)' : 'var(--color-dark)')};
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -69,9 +70,9 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: 600;
   text-align: center;
-  color: ${({ lightText }) => (lightText ? 'rgb(255, 255, 255)' : 'rgb(90,17,90)')};
+  color: ${({ lightText }) => (lightText ? 'var(--color-primary)' : 'var(--color-secundary)')};
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 820px) {
     font-size: 32px;
   };
 `;
@@ -81,8 +82,12 @@ export const SubTitle = styled.p`
   margin: 0 auto 35px auto;
   font-size: 18px;
   line-height: 24px;
-  text-align: justify;
-  color: ${({ darkText }) => (darkText ? 'rgb(90,17,90)' : 'rgb(0, 0, 0)')};
+  text-align: ${({ alignText }) => (alignText ? 'center' : 'justify')};
+  color: ${({ darkText }) => (darkText ? 'var(--color-secundary)' : 'var(--color-dark)')};
+
+  @media screen and (max-width: 820px) {
+    font-size: 15px;
+  };
 `;
 
 export const SocialWrap = styled.div`
@@ -98,7 +103,7 @@ export const SocialWrap = styled.div`
     height: 64px; 
 
     border-radius: 62px;
-    border: 2px solid rgb(0, 0, 0) ;
+    border: 2px solid var(--color-dark) ;
 
     svg {
       width: 40px;
@@ -107,7 +112,7 @@ export const SocialWrap = styled.div`
   };
 
   #Facebook {
-    color: rgb(255, 255, 255);
+    color: var(--color-primary);
     background: rgb(0, 32, 255, 0.9);
     transition: 0.2s;
 
@@ -118,7 +123,7 @@ export const SocialWrap = styled.div`
   };   
 
   #Instagram {
-    color: rgb(0, 0, 0);
+    color: var(--color-dark);
     background: linear-gradient(rgb(230, 100, 101), rgb(145, 152, 229));
     transition: 0.2s;
 
@@ -140,7 +145,7 @@ export const SocialWrap = styled.div`
   };   
 
   #Whatsapp {
-    color: rgb(255, 255, 255);
+    color: var(--color-primary);
     background-color: rgb(0,100,0);
     transition: 0.2s;
 
@@ -151,7 +156,7 @@ export const SocialWrap = styled.div`
   };   
 
   #E-mail {
-    color: rgb(255, 255, 255);
+    color: var(--color-primary);
     background-color: rgb(255,0,0);
     transition: 0.2s;
 
@@ -162,6 +167,16 @@ export const SocialWrap = styled.div`
   }; 
 `;
 
+export const PdfWrap = styled.div`
+  display: ${({ pdfWrap }) => (pdfWrap ? 'flex' : 'none')};
+  padding: 30px;
+
+  embed {
+    width: 100%;
+    height: 600px; 
+  }
+`;
+
 export const BtnWrap = styled.div`
   display: ${({ btnWrap }) => (btnWrap ? 'flex' : 'none')};
   justify-content: space-around; 
@@ -169,18 +184,19 @@ export const BtnWrap = styled.div`
 
   a {    
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--color-primary);
+    margin-bottom: 25px;
   }
 `;
 
 export const ImgWrap = styled.div`
-  min-width: 555px;
+  display: ${({ imgWrap }) => (imgWrap ? 'flex' : 'none')};
+
   height: 100%;
 
-  display: flex;
   justify-content: center;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,12 +204,12 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: ${({ size }) => (size ? '80%' : '65%')};
+  width: ${({ size }) => (size ? '80%' : '80%')};
   margin: 0 0 10px 0;
   padding-right: 0;
   border-radius: ${({ borderRadius }) => (borderRadius ? '80%' : 'none')};
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 820px) {
     width: ${({ size }) => (size ? '50%' : '35%')};
   };
 `;
